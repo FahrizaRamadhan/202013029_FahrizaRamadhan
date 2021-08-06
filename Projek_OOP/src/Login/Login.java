@@ -6,17 +6,18 @@
 package Login;
 
 import Pertanyaan.Pertanyaan;
+import Pertanyaan.Question;
 import javax.swing.JFrame;
-
+        
+        
 /**
  *
  * @author SONY
  */
 public class Login extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Login
-     */
+    
+    
     public Login() {
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         initComponents();
@@ -42,55 +43,63 @@ public class Login extends javax.swing.JFrame {
         umur = new javax.swing.JTextField();
         kelamin = new javax.swing.JTextField();
         mulai = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(0, 102, 204));
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Sitka Display", 1, 28)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 153, 0));
         jLabel1.setText("SILAHKAN MASUKKAN");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 40, 290, 80));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 180, 290, 80));
 
         jLabel2.setFont(new java.awt.Font("Sitka Display", 1, 28)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 153, 0));
         jLabel2.setText("DATA DIRI ANDA");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 80, 220, 80));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 220, 220, 80));
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(204, 153, 0));
         jLabel3.setText("NAMA LENGKAP");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 220, 130, 50));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 320, 130, 50));
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(204, 153, 0));
         jLabel4.setText("JENIS KELAMIN");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 300, 130, 50));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 400, 130, 50));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(204, 153, 0));
         jLabel5.setText("UMUR");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 260, 130, 50));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 360, 130, 50));
 
         nama.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 namaActionPerformed(evt);
             }
         });
-        jPanel1.add(nama, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 230, 160, 30));
+        jPanel1.add(nama, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 330, 160, 30));
 
         umur.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 umurActionPerformed(evt);
             }
         });
-        jPanel1.add(umur, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 270, 160, 30));
+        jPanel1.add(umur, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 370, 160, 30));
 
         kelamin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 kelaminActionPerformed(evt);
             }
         });
-        jPanel1.add(kelamin, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 310, 160, 30));
+        jPanel1.add(kelamin, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 410, 160, 30));
 
+        mulai.setBackground(new java.awt.Color(204, 240, 240));
         mulai.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         mulai.setText("Mulai");
         mulai.addActionListener(new java.awt.event.ActionListener() {
@@ -98,7 +107,13 @@ public class Login extends javax.swing.JFrame {
                 mulaiActionPerformed(evt);
             }
         });
-        jPanel1.add(mulai, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 370, 70, 40));
+        jPanel1.add(mulai, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 470, 70, 40));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Login/Picture5.png"))); // NOI18N
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 630, 1460, 140));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Login/Picture5.png"))); // NOI18N
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(-60, -50, 1450, 150));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1370, 740));
 
@@ -106,17 +121,17 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void namaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_namaActionPerformed
-        
+        Question.update(nama.getText());
         // TODO add your handling code here:
     }//GEN-LAST:event_namaActionPerformed
 
     private void umurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_umurActionPerformed
-
+        Question.update(umur.getText());
         // TODO add your handling code here:
     }//GEN-LAST:event_umurActionPerformed
 
     private void kelaminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kelaminActionPerformed
-
+        Question.update(kelamin.getText());
         // TODO add your handling code here:
     }//GEN-LAST:event_kelaminActionPerformed
 
@@ -126,13 +141,19 @@ public class Login extends javax.swing.JFrame {
 //        dataku[1]="hai";
 //        dataku[2]="hoi";
         
+//         Pertanyaan1 P1 = new Pertanyaan1();
+//        P1.update(Nama.getText());
+//        
         
         Login login = new Login();
-        Pertanyaan pertanyaan = new Pertanyaan();
+        Question question = new Question();
+//        Question.update(Nama.getText());
+//        Pertanyaan pertanyaan = new Pertanyaan();
         
         login.setVisible(false);
         this.dispose();
-        pertanyaan.setVisible(true);
+//        pertanyaan.setVisible(true);
+        question.setVisible(true);
         
         
         // TODO add your handling code here:
@@ -171,6 +192,8 @@ public class Login extends javax.swing.JFrame {
 //                new Login().setVisible(true);
 //                new Login().setVisible(false);
                 new Pertanyaan().setVisible(true);
+                
+            
             }
         });
     }
@@ -181,6 +204,8 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField kelamin;
     private javax.swing.JButton mulai;

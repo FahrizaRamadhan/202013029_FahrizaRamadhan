@@ -46,13 +46,14 @@ public class Splash extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(18, 13, 13));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(204, 153, 0));
         jLabel2.setText("Now Loading...");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 660, -1, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 620, 90, 30));
 
         Timer.setForeground(new java.awt.Color(204, 153, 0));
         Timer.setText("0 %");
-        jPanel1.add(Timer, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 660, -1, -1));
+        jPanel1.add(Timer, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 650, 40, 30));
 
         LoadingBar.setBackground(new java.awt.Color(255, 255, 255));
         LoadingBar.setForeground(new java.awt.Color(39, 136, 255));
